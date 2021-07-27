@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginScreen from "./components/login";
+import styled from "styled-components";
+import { ThemeProvider } from "@carvana/showroom-theme";
+
+const MainWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-family: ${(props) => props.theme.font.family};
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <MainWrapper>
+        <div style={{height: '104px'}}></div>
+        <LoginScreen />
+      </MainWrapper>
+    </ThemeProvider>
   );
 }
 
