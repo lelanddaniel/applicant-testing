@@ -13,7 +13,7 @@ const RoutesWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 104px);
   width: 100%;
   font-family: ${(props) => props.theme.font.family};
   background: #CFEAF2; /* fallback for old browsers */
