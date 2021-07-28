@@ -9,13 +9,10 @@ import Navigation from "../navigation";
 import WelcomeScreen from '../welcome';
 import Registration from '../registration';
 import SignIn from '../signin';
+import YourProfile from "../your-profile";
 
 const RoutesWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: calc(100vh - 104px);
+  height: 100%;
   width: 100%;
   font-family: ${(props) => props.theme.font.family};
   background: #CFEAF2; /* fallback for old browsers */
@@ -39,11 +36,14 @@ const Routes = props => {
       <Navigation pathname={pathname}/>
       <RoutesWrapper>
         <Switch>
-        <Route path="/signin">
+          <Route path="/signin">
             <SignIn />
           </Route>
           <Route path="/registration">
             <Registration />
+          </Route>
+          <Route path="/yourprofile">
+            <YourProfile />
           </Route>
           <Route path="/">
             <WelcomeScreen />

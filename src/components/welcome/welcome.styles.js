@@ -7,6 +7,8 @@ export const ContentWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
+  height: calc(100vh - 104px);
+  justify-content: center;
 `;
 
 export const EmailTextContainer = styled.div`

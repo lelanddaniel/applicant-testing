@@ -1,7 +1,7 @@
 import React from 'react';
 import * as sc from './navigation.styles';
 
-const routesToNotShowNavigation = ['/', '/registration'];
+const routesToNotShowNavigation = ['/', '/registration', '/signin'];
 
 const Navigation = ({pathname}) => {
 
