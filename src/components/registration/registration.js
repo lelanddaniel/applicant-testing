@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "@carvana/showroom-forms/Input";
-import HappyPlace from './HappyPlace.png';
+import HappyPlace from '../../assets/images/HappyPlace.png';
 import * as sc from "./registration.styles";
 
 const Registration = () => {
