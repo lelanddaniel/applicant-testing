@@ -30,7 +30,7 @@ const RoutesWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background: #FFFFFF;
+  background: #eef2f3;
   width: 100%;
 `;
 
