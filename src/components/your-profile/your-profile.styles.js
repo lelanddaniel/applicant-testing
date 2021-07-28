@@ -6,7 +6,7 @@ export const ContentWrapper = styled.div`
   width: 956px;
   margin-right: auto;
   flex-direction: column;
-  gap: 40px;
+  gap: 15px;
   height: 100%;
   padding-bottom: 25px;
 `;
@@ -22,14 +22,15 @@ export const InfoContainer = styled.div`
   border: 1.5px solid ${(props) => props.theme.color.neutral.v300};
   border-radius: 8px;
   background: #fff;
-  elevation: ${(props) => props.theme.depth.elevation.v300};
+  padding-bottom: 15px;
 `;
 
 export const ContainerLabel = styled.div`
   display: flex;
-  color: ${(props) => props.theme.color.neutral.v400};
+  color: ${(props) => props.theme.color.neutral.v600};
   font-size: 16px;
   padding: 20px;
+  font-weight: bold;
 `;
 
 export const LabelContainer = styled.div`
@@ -78,4 +79,56 @@ export const ButtonContainer = styled.div`
   justify-content: start;
   display: flex;
   padding: 20px;
+`;
+
+export const TestContainer = styled.div`
+  display: flex;
+  margin: auto;
+  height: 136px;
+  width: 892px;
+  background-color: #FFF4E2;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  justify-content: space-between;
+
+
+`;
+
+export const TestTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+`;
+
+export const TestLabel = styled.div`
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: ${(props) => props.theme.color.primary.v600};
+`;
+
+export const TestText = styled.div`
+  padding: 10px;
+  font-size: 14px;
+  color: ${(props) => props.theme.color.primary.v600};
+
+`;
+
+export const ButtonContainer2 = styled.div`
+  padding-top: 30px;
+  justify-content: end;
+  display: flex;
+  padding: 20px;
+  height: 40px;
+`;
+
+export const DividerLine = styled.div`
+  display: flex;
+  margin: auto;
+  width: 96%;
+  border-bottom: 1px solid #d9dde9;
+  align-items: center;
+  padding-top: 5px;
+  justify-content: space-between;
 `;
