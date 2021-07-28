@@ -5,8 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import styled from "styled-components";
-import { Banner } from '../../assets/component';
-import Navigation from "../navigation";
+import { Banner, Navigation } from '../../assets/components';
 import WelcomeScreen from '../welcome';
 import ListOfPositions from "../list-of-positions";
 import Registration from '../registration';
