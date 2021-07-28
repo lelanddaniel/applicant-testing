@@ -8,6 +8,7 @@ import styled from "styled-components";
 import Navigation from "../navigation";
 import WelcomeScreen from '../welcome';
 import Registration from '../registration';
+import SignIn from '../signin';
 
 const RoutesWrapper = styled.div`
   display: flex;
