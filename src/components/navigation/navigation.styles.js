@@ -9,8 +9,9 @@ export const navigationTile = styled.div`
   font-size: 16px;
   line-height: 20px;
   font-feature-settings: 'liga' off;
-  color: ${props => props.selected ? '#00619E' : '#757989'};
-  border-bottom: ${props => props.selected ? '4px solid #00619E' : null};
+  padding-top: ${props => props.selected ? '4px' : '0px'};
+  color: ${props => props.selected ? props.theme.color.primary.v400 : props.theme.color.neutral.v500};
+  border-bottom: ${props => props.selected ? `4px solid ${props.theme.color.primary.v400}` : null};
 
   &:first-child {
     padding-left: 0px;
