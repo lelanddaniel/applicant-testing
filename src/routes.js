@@ -7,6 +7,7 @@ import {
 import styled from "styled-components";
 import WelcomeScreen from './components/welcome';
 import Registration from './components/registration';
+import Challenge from './components/challenge';
 
 const RoutesWrapper = styled.div`
   display: flex;
@@ -36,6 +37,9 @@ const Routes = () => {
         <Switch>
           <Route path="/registration">
             <Registration />
+          </Route>
+          <Route path="/challenge">
+            <Challenge />
           </Route>
           <Route path="/">
             <WelcomeScreen />
