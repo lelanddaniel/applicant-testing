@@ -10,7 +10,7 @@ export const navigationTile = styled.div`
   line-height: 20px;
   font-feature-settings: 'liga' off;
   padding-top: ${props => props.selected ? '4px' : '0px'};
-  color: ${props => props.selected ? props.theme.color.primary.v400 : props.theme.color.neutral.v500}};
+  color: ${props => props.selected ? props.theme.color.primary.v400 : props.theme.color.neutral.v500};
   border-bottom: ${props => props.selected ? `4px solid ${props.theme.color.primary.v400}` : null};
 
   &:first-child {

@@ -7,6 +7,7 @@ import {
 import styled from "styled-components";
 import Navigation from "../navigation";
 import WelcomeScreen from '../welcome';
+import ListOfPositions from "../list-of-positions";
 import Registration from '../registration';
 import SignIn from '../signin';
 import YourProfile from "../your-profile";
@@ -28,6 +29,11 @@ const RoutesWrapper = styled.div`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 
+const Wrapper = styled.div`
+  background: #FFFFFF;
+  width: 100%;
+`;
+
 const Routes = props => {
   const { location: { pathname } = {} } = props;
 
@@ -36,14 +42,21 @@ const Routes = props => {
       <Navigation pathname={pathname}/>
       <RoutesWrapper>
         <Switch>
-          <Route path="/signin">
-            <SignIn />
+          <Route path="/positions">
+            <Wrapper>
+              <ListOfPositions />
+            </Wrapper>
           </Route>
           <Route path="/registration">
             <Registration />
           </Route>
           <Route path="/yourprofile">
-            <YourProfile />
+            <Wrapper>
+              <YourProfile />
+            </Wrapper>
+          </Route>
+          <Route path="/signin">
+            <SignIn />
           </Route>
           <Route path="/">
             <WelcomeScreen />
