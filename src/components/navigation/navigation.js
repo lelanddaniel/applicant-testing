@@ -1,11 +1,11 @@
 import React from 'react';
 import * as sc from './navigation.styles';
 
-const routesToNotShowNavigation = ['/', '/registration', '/signin'];
+const routesToShowNavigation = ['/positions', '/your-profile', '/applications'];
 
 const Navigation = ({pathname}) => {
 
-  if (routesToNotShowNavigation.includes(pathname)) return null;
+  if (!routesToShowNavigation.includes(pathname)) return null;
 
   return (
     <sc.Wrapper>
