@@ -8,6 +8,9 @@ export const ContentWrapper = styled.div`
   margin-right: auto;
   flex-direction: row;
   gap: 140px;
+  height: calc(100vh - 104px);
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.div`

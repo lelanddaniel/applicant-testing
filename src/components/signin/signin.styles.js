@@ -3,10 +3,12 @@ import PrimaryButton from "@carvana/showroom-forms/Button/Primary";
 
 export const ContentWrapper = styled.div`
   display: flex;
-  max-width: 1141px;
+  max-width: 511px;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
+  height: calc(100vh - 104px);
+  justify-content: center;
 `;
 
 export const Title = styled.div`
