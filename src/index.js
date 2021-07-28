@@ -1,11 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { createGlobalStyle } from 'styled-components';
 import reportWebVitals from './reportWebVitals';
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: auto;
+    height: 100%;
+    font-weight: 400;
+    color: #333;
+    font-family: Brandon Text, Lato, Helvetica, sans-serif;
+    font-feature-settings: 'liga' off, 'cpsp' on;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyle />
+      <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
