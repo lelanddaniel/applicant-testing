@@ -1,4 +1,4 @@
-import LoginScreen from "./components/login";
+import WelcomeScreen from "./components/welcome";
 import styled from "styled-components";
 import { ThemeProvider } from "@carvana/showroom-theme";
 
@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider>
       <MainWrapper>
         <div style={{height: '104px'}}></div>
-        <LoginScreen />
+        <WelcomeScreen />
       </MainWrapper>
     </ThemeProvider>
   );
