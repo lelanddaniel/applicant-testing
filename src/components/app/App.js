@@ -1,14 +1,15 @@
-import Header from './components/header'
+import Header from '../header'
+import { withRouter } from 'react-router-dom';
 import Routes from './routes';
 import { ThemeProvider } from "@carvana/showroom-theme";
 
-function App() {
+const App = (props) => {
   return (
     <ThemeProvider>
       <Header />
-      <Routes />
+      <Routes {...props}/>
     </ThemeProvider>
   );
 }
 
-export default App;
+export default withRouter(App);
