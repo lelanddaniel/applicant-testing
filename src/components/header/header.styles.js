@@ -7,6 +7,11 @@ export const CareerProfile = styled.div`
   color: #757989;
 `;
 
+export const ContentWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const PipeDivider = styled.div`
   margin-left: 32px;
   height: 24px;
@@ -28,6 +33,7 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   padding-left: 60px;
   background: white;
+  border-bottom: 1px solid #D9DDE9;
 `;
 
 export const ImageWrapper = styled.img`
