@@ -22,7 +22,7 @@ const WelcomeScreen = () => {
       </sc.ButtonContainer>
       <sc.AccountExistsTextContainer>
         Already have a Career Profile? 
-        <sc.LinkText href='/login'>&#160;Log In</sc.LinkText>
+        <sc.LinkText href={'/registration'}>&#160;Log In</sc.LinkText>
       </sc.AccountExistsTextContainer>
 
     </sc.ContentWrapper>
