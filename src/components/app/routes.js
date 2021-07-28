@@ -5,9 +5,10 @@ import {
   Route
 } from "react-router-dom";
 import styled from "styled-components";
-import WelcomeScreen from './components/welcome';
-import Registration from './components/registration';
-import SignIn from "./components/signin";
+import Navigation from "../navigation";
+import WelcomeScreen from '../welcome';
+import Registration from '../registration';
+import SignIn from '../signin';
 
 const RoutesWrapper = styled.div`
   display: flex;
@@ -30,9 +31,12 @@ const RoutesWrapper = styled.div`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 
-const Routes = () => {
+const Routes = props => {
+  const { location: { pathname } = {} } = props;
+
   return(
     <Router>
+      <Navigation pathname={pathname}/>
       <RoutesWrapper>
         <Switch>
         <Route path="/signin">
