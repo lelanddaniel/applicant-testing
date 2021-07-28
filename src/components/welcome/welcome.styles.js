@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import PrimaryButton from '@carvana/showroom-forms/Button/Primary';
+import styled from "styled-components";
+import PrimaryButton from "@carvana/showroom-forms/Button/Primary";
 
 export const ContentWrapper = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
-  `;
+`;
 
 export const EmailTextContainer = styled.div`
   padding-top: 15px;
@@ -30,10 +30,10 @@ export const AccountExistsTextContainer = styled.div`
   padding-top: 10px;
   justify-content: center;
   font-size: 14px;
-  color: ${props => props.theme.color.neutral.v500};
+  color: ${(props) => props.theme.color.neutral.v500};
 `;
 
 export const LinkText = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.color.primary.v400};
+  color: ${(props) => props.theme.color.primary.v400};
 `;
