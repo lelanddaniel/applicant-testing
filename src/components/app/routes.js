@@ -29,13 +29,8 @@ const RoutesWrapper = styled.div`
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 
-const WhiteWrapper = styled.div`
+const Wrapper = styled.div`
   background: #FFFFFF;
-  width: 100%;
-`;
-
-const GreyBackgroundWrapper = styled.div`
-  background: #eef2f3;
   width: 100%;
 `;
 
@@ -49,19 +44,19 @@ const Routes = props => {
       <Banner pathname={pathname}/>
         <Switch>
           <Route path="/positions">
-            <WhiteWrapper>
+            <Wrapper>
               <ListOfPositions />
-            </WhiteWrapper>
+            </Wrapper>
           </Route>
           <Route path="/your-profile">
-            <GreyBackgroundWrapper>
+            <Wrapper>
               <YourProfile />
-            </GreyBackgroundWrapper>
+            </Wrapper>
           </Route>
           <Route path="/applications">
-            <WhiteWrapper>
+            <Wrapper>
               <YourProfile />
-            </WhiteWrapper>
+            </Wrapper>
           </Route>
           <Route path="/registration">
             <Registration />
