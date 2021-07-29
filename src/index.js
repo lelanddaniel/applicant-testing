@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store({})}>
+    <Provider store={store}>
       <ConnectedRouter history={history}>
         <GlobalStyle />
         <App />
