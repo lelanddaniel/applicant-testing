@@ -9,8 +9,8 @@ const Navigation = ({pathname}) => {
 
   return (
     <sc.Wrapper>
-      <sc.navigationTile selected={pathname === '/positions'}>Home</sc.navigationTile>
-      <sc.navigationTile selected={pathname === '/applications'}>Applications</sc.navigationTile>
+      <sc.navigationTile onClick={()=>{ document.location.href =  '/positions'}} selected={pathname === '/positions'}>Home</sc.navigationTile>
+      <sc.navigationTile onClick={()=>{ document.location.href =  '/applications'}}selected={pathname === '/applications'}>Applications</sc.navigationTile>
     </sc.Wrapper>
   )
 }
