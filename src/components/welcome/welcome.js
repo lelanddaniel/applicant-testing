@@ -13,7 +13,7 @@ const Welcome = () => {
           <SubSectionHeader>Your profile helps our recruiting team know who you are and what fits you.</SubSectionHeader>
         </div>
         <div>
-          <sc.HelpGetToKnowButton>Complete profile</sc.HelpGetToKnowButton>
+          <sc.HelpGetToKnowButton onClick={() => document.location.href = '/your-profile'}>Complete profile</sc.HelpGetToKnowButton>
         </div>
       </sc.HelpGetToKnow>
       <sc.Sections>

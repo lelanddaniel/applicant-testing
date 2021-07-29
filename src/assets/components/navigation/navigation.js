@@ -14,7 +14,7 @@ const Navigation = ({pathname}) => {
             return (
               <sc.navigationTile
                 key={navItem.id}
-                onClick={()=>{ document.location.href =  navItem.path}}
+                onClick={()=>{document.location.href =  navItem.path}}
                 selected={pathname === navItem.path}>
                 {navItem.title}
               </sc.navigationTile>
