@@ -9,7 +9,7 @@ const getConfigForRoute = (pathname, username) => {
   };
 
   switch(pathname) {
-    case '/positions':
+    case '/welcome':
       config.image = StuckHomeWorkingfromHome;
       config.text = `Welcome ${username}!`;
       break;
@@ -29,7 +29,7 @@ const getConfigForRoute = (pathname, username) => {
   return config;
 }
 
-const routesToShowBanner = ['/positions', '/your-profile', '/applications'];
+const routesToShowBanner = ['/welcome', '/your-profile', '/applications'];
 
 const Banner = ({pathname}) => {
   const username = 'Josh'
