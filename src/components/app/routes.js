@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import styled from "styled-components";
 import { Banner, Navigation } from '../../assets/components';
-import WelcomeScreen from '../welcome';
-import ListOfPositions from "../list-of-positions";
+import Landing from '../landing';
+import Welcome from "../welcome";
 import Registration from '../registration';
 import SignIn from '../signin';
 import YourProfile from "../your-profile";
@@ -43,9 +43,9 @@ const Routes = props => {
       <RoutesWrapper>
       <Banner pathname={pathname}/>
         <Switch>
-          <Route path="/positions">
+          <Route path="/welcome">
             <Wrapper>
-              <ListOfPositions />
+              <Welcome />
             </Wrapper>
           </Route>
           <Route path="/your-profile">
@@ -65,7 +65,7 @@ const Routes = props => {
             <SignIn />
           </Route>
           <Route path="/">
-            <WelcomeScreen />
+            <Landing />
           </Route>
         </Switch>
       </RoutesWrapper>
