@@ -33,7 +33,7 @@ const Registration = () => {
       </sc.ButtonContainer>
       <sc.AccountExistsTextContainer>
         Already have a Career Profile? 
-        <sc.LinkText href={'/registration'}>&#160;Log In</sc.LinkText>
+        <sc.LinkText href={'/signin'}>&#160;Log In</sc.LinkText>
       </sc.AccountExistsTextContainer>
       </sc.RegistrationWrapper>
     </sc.ContentWrapper>

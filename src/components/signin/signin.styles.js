@@ -3,14 +3,12 @@ import PrimaryButton from "@carvana/showroom-forms/Button/Primary";
 
 export const ContentWrapper = styled.div`
   display: flex;
-  max-width: 1141px;
+  max-width: 511px;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: row;
-  gap: 140px;
+  flex-direction: column;
   height: calc(100vh - 104px);
   justify-content: center;
-  align-items: center;
 `;
 
 export const Title = styled.div`
@@ -27,12 +25,7 @@ export const BodyWrapper = styled.div`
   line-height: 20px;
 `;
 
-export const FirstAndLastInputsContainer = styled.div`
-  display: flex;
-  gap: 15px;
-`;
-
-export const PhoneNumberInputContainer = styled.div`
+export const EmailInputContainer = styled.div`
   display: flex;
 `;
 
@@ -41,13 +34,12 @@ export const PasswordInputContainer = styled.div`
 `;
 
 export const ImageWrapper = styled.img`
-  display: flex;
-  flex-basis: 50%;
-  height: 482px;
-  width: 396px;
+  position: relative;
+  left: 450px;
+  bottom: 95px;
 `;
 
-export const RegistrationWrapper = styled.div`
+export const SignInWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
@@ -58,15 +50,20 @@ export const ButtonContainer = styled.div`
   padding-top: 30px;
   justify-content: center;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 180px;
+  right: -130px;
+  height: 10px;
 `;
 
 export const StyledButton = styled(PrimaryButton)`
   width: 250px;
 `;
 
-export const AccountExistsTextContainer = styled.div`
+export const AccountDoesntExistsTextContainer = styled.div`
   display: flex;
-  padding-top: 12px;
+  padding-top: 10px;
   justify-content: center;
   font-size: 14px;
   color: ${(props) => props.theme.color.neutral.v500};

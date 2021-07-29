@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/app/App';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
 import { createGlobalStyle } from 'styled-components';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './components/app/reportWebVitals';
+import { store, history} from './store';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -27,8 +30,12 @@ const GlobalStyle = createGlobalStyle`
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyle />
-      <App />
+    <Provider store={store({})}>
+      <ConnectedRouter history={history}>
+        <GlobalStyle />
+        <App />
+      </ConnectedRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

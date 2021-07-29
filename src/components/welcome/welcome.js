@@ -1,32 +1,30 @@
-import React from "react";
-import HeaderTextBlock from "@carvana/showroom-content/TextBlock/Header";
-import Input from '@carvana/showroom-forms/Input';
-import * as sc from "./welcome.styles";
+import React from 'react';
+import { SectionHeader, SubSectionHeader } from '../../assets/styles';
+import * as sc from './welcome.styles';
+import { PositionsList } from '../../assets/components';
+import availablePositions from './welcome.config';
 
-const WelcomeScreen = () => {
+const Welcome = () => {
   return (
-    <sc.ContentWrapper>
-      <HeaderTextBlock size="large">
-        <HeaderTextBlock.Title>Welcome to the Carvana Career Profile</HeaderTextBlock.Title>
-        <HeaderTextBlock.Description>
-          Please sign up to continue to your career portal!
-        </HeaderTextBlock.Description>
-      </HeaderTextBlock>
-      <sc.EmailTextContainer>
-        <Input label="Email" width={400} mode="dark"/>
-      </sc.EmailTextContainer>
-      <sc.ButtonContainer>
-        <sc.StyledButton>
-          Sign up
-        </sc.StyledButton>
-      </sc.ButtonContainer>
-      <sc.AccountExistsTextContainer>
-        Already have a Career Profile? 
-        <sc.LinkText href={'/registration'}>&#160;Log In</sc.LinkText>
-      </sc.AccountExistsTextContainer>
+    <sc.Wrapper>
+      <sc.HelpGetToKnow>
+        <div>
+          <SectionHeader>Help us get to know you</SectionHeader>
+          <SubSectionHeader>Your profile helps our recruiting team know who you are and what fits you.</SubSectionHeader>
+        </div>
+        <div>
+          <sc.HelpGetToKnowButton>Complete profile</sc.HelpGetToKnowButton>
+        </div>
+      </sc.HelpGetToKnow>
+      <sc.PositionsSection>
+        <SectionHeader>Featured positions</SectionHeader>
+        <SubSectionHeader>Be part of the team disrupting the car-buying status quo.</SubSectionHeader>
+        <PositionsList positions={availablePositions}/>
+      </sc.PositionsSection>
 
-    </sc.ContentWrapper>
-  );
+      <SectionHeader>Related blog post</SectionHeader>
+    </sc.Wrapper>
+  )
 };
 
-export default WelcomeScreen;
+export default Welcome;
