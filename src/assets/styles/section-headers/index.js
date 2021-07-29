@@ -12,5 +12,6 @@ export const SubSectionHeader = styled.div`
   font-size: 18px;
   line-height: 28px;
   font-feature-settings: 'liga' off;
+  padding-top: 12px;
   color: ${props => props.theme.color.neutral.v500};
 `;
