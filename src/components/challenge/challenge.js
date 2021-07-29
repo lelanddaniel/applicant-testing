@@ -1,8 +1,9 @@
 import React from "react";
-import HeaderTextBlock from "@carvana/showroom-content/TextBlock/Header";
-import { THUMB_SIZE } from "@carvana/showroom-forms/Switch/Base/SwitchBase.styles";
-import Input from "@carvana/showroom-forms/Input";
 import * as sc from "./challenge.styles";
+import { SectionHeader, SubSectionHeader } from '../../assets/styles';
+import challenges from "../../modules/challenges/challenges";
+
+//CodeMirror imports...
 import CodeMirror from "react-codemirror";
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/addon/display/autorefresh';
@@ -14,23 +15,34 @@ import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/javascript/javascript';
 
 
+var thisChallenge = challenges.challengelist[0];
 
 
 const Challenge = () => {
     return (
-        <sc.ContentWrapper>
+        <sc.Wrapper>
+            <sc.ChallengeInfo>
+            <div>
+            <SectionHeader>Challenge: {thisChallenge.title}</SectionHeader>
+            <b>Lanuage: </b>  {thisChallenge.language} <br />
+            <b>Difficulty: </b>  {challenges.getLevelName(thisChallenge.level)} 
+            </div>
+            <div>
+                <sc.SimpleButton>Submit Your Work</sc.SimpleButton>
+            </div>
+            </sc.ChallengeInfo>
             <sc.CodeArea>
                 <style dangerouslySetInnerHTML={{__html: `
                     .CodeMirror {height:1000px !important}
                 `}} />
 
                 <CodeMirror
-                    value={'var i = 1;'}
+                    value={thisChallenge.code}
                     options={{
                         theme: 'erlang-dark',
                         keyMap: 'default',
                         fullscreen: true,
-                        mode: 'javascript',
+                        mode: thisChallenge.language,
                         lineNumbers: true,
                     }}
                 />
@@ -38,7 +50,7 @@ const Challenge = () => {
 
             
 
-        </sc.ContentWrapper>
+        </sc.Wrapper>
       );
   };
   
