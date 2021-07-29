@@ -5,7 +5,7 @@ import Primary from '../../assets/images/PrimaryLogo.svg';
 const Header = () => {
   return (
     <sc.HeaderWrapper>
-      <sc.ContentWrapper>
+      <sc.ContentWrapper onClick={() => document.location.href = '/'}>
         <sc.ImageWrapper src={Primary} alt='Primary'/>
         <sc.FastLane>Fast Lane</sc.FastLane>
         <sc.PipeDivider />

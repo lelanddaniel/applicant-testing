@@ -1,2 +1,2 @@
-export { history } from './history';
-export { configureStore as store } from './store';
+export { default as history } from './history';
+export { store } from './store';

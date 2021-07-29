@@ -10,6 +10,7 @@ export const CareerProfile = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const PipeDivider = styled.div`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SecondaryButton, PrimaryButton } from "@carvana/showroom-forms";
 
 export const ContentWrapper = styled.div`
   display: flex;
@@ -134,4 +135,19 @@ export const DividerLine = styled.div`
 export const MyModalContent = styled.div`
   padding: 6em 1em;
   text-align: center;
+`;
+
+export const SmallSecondaryStyledButton = styled(SecondaryButton)`
+  width: 100px;
+  min-width: 100px;
+  height: 40px;
+  min-height: 40px;
+`;
+
+export const SmallPrimaryStyledButton = styled(PrimaryButton)`
+  width: 100px;
+  min-width: 100px;
+  height: 40px;
+  min-height: 40px;
+  margin-left: 24px;
 `;

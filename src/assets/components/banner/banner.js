@@ -40,7 +40,7 @@ const Banner = ({pathname}) => {
   const config = getConfigForRoute(pathname, username);
 
   if (!routesToShowBanner.includes(pathname)) return null;
-  
+
   return (
     <sc.Wrapper>
       <sc.ContentWrapper>
