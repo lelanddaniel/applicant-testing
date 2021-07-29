@@ -11,6 +11,7 @@ import Welcome from "../welcome";
 import Registration from '../registration';
 import SignIn from '../signin';
 import YourProfile from "../your-profile";
+import Challenge from "../challenge"
 import Applications from "../applications";
 
 const RoutesWrapper = styled.div`
@@ -64,6 +65,11 @@ const Routes = props => {
           </Route>
           <Route path="/signin">
             <SignIn />
+          </Route>
+          <Route path="/challenge">
+            <Wrapper>
+              <Challenge />
+            </Wrapper>
           </Route>
           <Route path="/">
             <Landing />
