@@ -2,7 +2,7 @@ import React from 'react';
 import * as sc from './navigation.styles';
 import NavigationConfig from './navigation.config';
 
-const routesToShowNavigation = ['/positions', '/your-profile', '/applications'];
+const routesToShowNavigation = ['/welcome', '/your-profile', '/applications'];
 
 const Navigation = ({pathname}) => {
 
@@ -14,7 +14,7 @@ const Navigation = ({pathname}) => {
             return (
               <sc.navigationTile
                 key={navItem.id}
-                onClick={()=>{ document.location.href =  navItem.path}}
+                onClick={()=>{document.location.href =  navItem.path}}
                 selected={pathname === navItem.path}>
                 {navItem.title}
               </sc.navigationTile>
