@@ -14,7 +14,7 @@ export const navigationTile = styled.div`
   border-bottom: ${props => props.selected ? `4px solid ${props.theme.color.primary.v400}` : null};
 
   &:first-child {
-    padding-left: 0px;
+    margin-left: 0px;
   }
   cursor: pointer;
 `;
