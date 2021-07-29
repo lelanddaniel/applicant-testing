@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import * as sc from "./challenge.styles";
 import { SectionHeader, SubSectionHeader } from '../../assets/styles';
 import challenges from "../../modules/challenges/challenges";
@@ -15,10 +16,24 @@ import 'codemirror/mode/xml/xml';
 import 'codemirror/mode/javascript/javascript';
 
 
-var thisChallenge = challenges.challengelist[0];
+var thisChallenge = null;
+
+const setChallenge = (id) => {
+    challenges.challengelist.forEach((x, i) => {
+        if (x.id == id) thisChallenge = challenges.challengelist[x.id - 1];
+    });
+
+    if (thisChallenge === null)
+    {
+        thisChallenge = challenges.challengelist[0];
+    }
+};
 
 
 const Challenge = () => {
+    const {id} = useParams();
+    setChallenge(id);
+
     return (
         <sc.Wrapper>
             <sc.ChallengeInfo>

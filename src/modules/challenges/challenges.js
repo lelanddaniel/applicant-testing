@@ -15,6 +15,18 @@ challenges.challengelist = [
 \n\
 \n'
     },
+    {
+        id: 2,
+        title: 'Classes',
+        level: 2,
+        language: 'javascript',
+        code: '//Instructions: \n\
+//Create a class.... \n\
+\n\
+\n\
+\n\
+\n'
+    }
 ];
 
 challenges.getLevelName = (level) => {
