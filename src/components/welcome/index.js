@@ -1,3 +1,3 @@
-import WelcomeScreen from './welcome';
+import Welcome from './welcome';
 
-export default WelcomeScreen;
+export default Welcome;
