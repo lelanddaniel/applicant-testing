@@ -12,6 +12,7 @@ import Registration from '../registration';
 import SignIn from '../signin';
 import YourProfile from "../your-profile";
 import Challenge from "../challenge"
+import Applications from "../applications";
 
 const RoutesWrapper = styled.div`
   height: 100%;
@@ -56,7 +57,7 @@ const Routes = props => {
           </Route>
           <Route path="/applications">
             <Wrapper>
-              <YourProfile />
+              <Applications />
             </Wrapper>
           </Route>
           <Route path="/registration">
