@@ -21,6 +21,10 @@ const getConfigForRoute = (pathname, username) => {
       config.image = StuckHomeToDoList;
       config.text = 'Applications';
       break;
+    case '/tests':
+      config.image = StuckHomeToDoList;
+      config.text = 'Coding Challenges';
+      break;
     default:
       config.image = StuckHomeWorkingfromHome;
       config.text = `Welcome!`;
@@ -29,7 +33,7 @@ const getConfigForRoute = (pathname, username) => {
   return config;
 }
 
-const routesToShowBanner = ['/welcome', '/your-profile', '/applications'];
+const routesToShowBanner = ['/positions', '/your-profile', '/applications', '/tests'];
 
 const Banner = ({pathname}) => {
   const username = 'Josh'
