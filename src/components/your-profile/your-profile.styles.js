@@ -9,7 +9,7 @@ export const ContentWrapper = styled.div`
   gap: 15px;
   height: 100%;
   padding-bottom: 25px;
-  padding-top: 80px;
+  padding-top: 40px;
 `;
 
 export const InfoContainer = styled.div`
@@ -45,8 +45,8 @@ export const TextContainer = styled.div`
   flex-direction: row;
 `;
 
-export const EditButton = styled.p`
-  padding-right: 20px;
+export const EditButton = styled.a`
+  padding: 20px;
   color: ${(props) => props.theme.color.primary.v200};
   font-weight: bold;
   cursor: pointer; ;
@@ -117,6 +117,8 @@ export const ButtonContainer2 = styled.div`
   display: flex;
   padding: 20px;
   height: 40px;
+  position: relative;
+  bottom: -25px;
 `;
 
 export const DividerLine = styled.div`
@@ -127,4 +129,9 @@ export const DividerLine = styled.div`
   align-items: center;
   padding-top: 5px;
   justify-content: space-between;
+`;
+
+export const MyModalContent = styled.div`
+  padding: 6em 1em;
+  text-align: center;
 `;
