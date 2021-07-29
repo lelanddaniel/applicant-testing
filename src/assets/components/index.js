@@ -3,3 +3,4 @@ export { default as EditPersonalDetailsModal } from './edit-personal-details-mod
 export { default as EditProfessionalInfoModal } from './edit-professional-info-modal';
 export { default as Navigation } from './navigation';
 export { default as PositionsList } from './positions-list';
+export { default as EmbedYoutube } from './embed-youtube';
