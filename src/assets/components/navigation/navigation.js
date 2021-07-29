@@ -1,5 +1,6 @@
 import React from 'react';
 import * as sc from './navigation.styles';
+import NavigationConfig from './navigation.config';
 
 const routesToShowNavigation = ['/positions', '/your-profile', '/applications'];
 
@@ -9,8 +10,16 @@ const Navigation = ({pathname}) => {
 
   return (
     <sc.Wrapper>
-      <sc.navigationTile onClick={()=>{ document.location.href =  '/positions'}} selected={pathname === '/positions'}>Home</sc.navigationTile>
-      <sc.navigationTile onClick={()=>{ document.location.href =  '/applications'}}selected={pathname === '/applications'}>Applications</sc.navigationTile>
+      {NavigationConfig.map((navItem, index) => {
+            return (
+              <sc.navigationTile
+                key={navItem.id}
+                onClick={()=>{ document.location.href =  navItem.path}}
+                selected={pathname === navItem.path}>
+                {navItem.title}
+              </sc.navigationTile>
+            );
+          })}
     </sc.Wrapper>
   )
 }
