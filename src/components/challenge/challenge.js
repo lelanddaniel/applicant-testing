@@ -52,7 +52,7 @@ const Challenge = () => {
                 `}} />
 
                 <CodeMirror
-                    value={thisChallenge.code}
+                    value={thisChallenge.code + "\n\n\n\n\n"}
                     options={{
                         theme: 'erlang-dark',
                         keyMap: 'default',
