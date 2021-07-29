@@ -10,8 +10,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const CodeArea = styled.div`
-  padding-top: 15px;
   width: 1000px;
-  display: flex;
-  border: 1px solid red;
+  display: block;
 `;
+
