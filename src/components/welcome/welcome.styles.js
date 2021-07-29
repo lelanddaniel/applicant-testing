@@ -19,7 +19,7 @@ export const HelpGetToKnowButton = styled(PrimaryButton)`
   min-height: 40px;
 `;
 
-export const PositionsSection = styled.div`
+export const Sections = styled.div`
   padding-top: 60px;
 `;
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Thumbnail } from 'react-native-thumbnail-video';
 import { SectionHeader, SubSectionHeader } from '../../assets/styles';
 import * as sc from './welcome.styles';
 import { PositionsList } from '../../assets/components';
@@ -16,13 +17,16 @@ const Welcome = () => {
           <sc.HelpGetToKnowButton>Complete profile</sc.HelpGetToKnowButton>
         </div>
       </sc.HelpGetToKnow>
-      <sc.PositionsSection>
+      <sc.Sections>
         <SectionHeader>Featured positions</SectionHeader>
         <SubSectionHeader>Be part of the team disrupting the car-buying status quo.</SubSectionHeader>
         <PositionsList positions={availablePositions}/>
-      </sc.PositionsSection>
+      </sc.Sections>
 
-      <SectionHeader>Related blog post</SectionHeader>
+      <sc.Sections>
+        <SectionHeader>Related blog post</SectionHeader>
+        <Thumbnail url="https://www.youtube.com/watch?v=lgj3D5-jJ74"/>
+      </sc.Sections>
     </sc.Wrapper>
   )
 };
