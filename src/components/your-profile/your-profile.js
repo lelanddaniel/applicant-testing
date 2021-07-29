@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import SecondaryButton from "@carvana/showroom-forms/Button/Secondary";
 import PrimaryButton from "@carvana/showroom-forms/Button/Primary";
+import EditPersonalDetailsModal from "../../assets/components/edit-personal-details-modal/edit-modal";
 import * as sc from "./your-profile.styles";
 
 const YourProfile = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const closeModal = () => {
+    setOpenModal(!openModal);
+  };
   return (
     <sc.ContentWrapper>
       <sc.InfoContainer>
         <sc.ContainerLabelWrapper>
           <sc.ContainerLabel>Personal Information</sc.ContainerLabel>
-          <sc.EditButton>EDIT</sc.EditButton>
+          <sc.EditButton onClick={closeModal}>EDIT</sc.EditButton>
+          <EditPersonalDetailsModal
+            headerText="Edit Personal Details"
+            closeModal={closeModal}
+            isOpen={openModal}
+            testHook="test-modal"
+            mode="dark"
+            portalDivId="editPersonalDetails"
+          >
+          </EditPersonalDetailsModal>
         </sc.ContainerLabelWrapper>
         <sc.DividerLine></sc.DividerLine>
         <sc.LabelContainer>

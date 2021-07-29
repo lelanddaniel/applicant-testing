@@ -53,7 +53,7 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   position: relative;
   top: 180px;
-  right: -115px;
+  right: -130px;
   height: 10px;
 `;
 
