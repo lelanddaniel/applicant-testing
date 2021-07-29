@@ -3,7 +3,7 @@ import Modal from "@carvana/showroom-modal";
 import { Input } from "@carvana/showroom-forms";
 import * as sc from "./edit-modal.styles";
 
-const EditPersonalDetailsModal = (props) => {
+const EditProfessionalInfoModal = (props) => {
   const { headerText, closeModal, isOpen, testHook, mode, portalDivId } = props;
 
   return (
@@ -18,12 +18,11 @@ const EditPersonalDetailsModal = (props) => {
       <sc.MyModalContent>
         <sc.Title>Update Your Personal Information</sc.Title>
         <sc.TextContainer>
-          <Input label="Full Name" width={400}></Input>
-          <Input label="Preferred Name" width={400}></Input>
+          <Input label="LinkedIn Profile" width={400}></Input>
+          <Input label="Personal Website" width={400}></Input>
         </sc.TextContainer>
         <sc.TextContainer>
-          <Input label="Email" width={400}></Input>
-          <Input label="Phone Number" width={400}></Input>
+          <Input label="Github Profile" width={400}></Input>
         </sc.TextContainer>
         <sc.ButtonContainer>
           <sc.StyledButton>Submit</sc.StyledButton>
@@ -36,4 +35,4 @@ const EditPersonalDetailsModal = (props) => {
   );
 };
 
-export default EditPersonalDetailsModal;
+export default EditProfessionalInfoModal;
