@@ -3,23 +3,29 @@ import SecondaryButton from "@carvana/showroom-forms/Button/Secondary";
 import PrimaryButton from "@carvana/showroom-forms/Button/Primary";
 import EditPersonalDetailsModal from "../../assets/components/edit-personal-details-modal/edit-modal";
 import * as sc from "./your-profile.styles";
+import EditProfessionalInfoModal from "../../assets/components/edit-professional-info-modal/edit-modal";
 
 const YourProfile = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [openPersonalInfoModal, setOpenPersonalInfoModal] = useState(false);
+  const [openProInfoModal, setOpenProInfoModal] = useState(false);
 
-  const closeModal = () => {
-    setOpenModal(!openModal);
+  const closePersonalInfoModal = () => {
+    setOpenPersonalInfoModal(!openPersonalInfoModal);
+  };
+
+  const closeProInfoModal = () => {
+    setOpenProInfoModal(!openProInfoModal);
   };
   return (
     <sc.ContentWrapper>
       <sc.InfoContainer>
         <sc.ContainerLabelWrapper>
           <sc.ContainerLabel>Personal Information</sc.ContainerLabel>
-          <sc.EditButton onClick={closeModal}>EDIT</sc.EditButton>
+          <sc.EditButton onClick={closePersonalInfoModal}>EDIT</sc.EditButton>
           <EditPersonalDetailsModal
             headerText="Edit Personal Details"
-            closeModal={closeModal}
-            isOpen={openModal}
+            closeModal={closePersonalInfoModal}
+            isOpen={openPersonalInfoModal}
             testHook="test-modal"
             mode="dark"
             portalDivId="editPersonalDetails"
@@ -46,7 +52,15 @@ const YourProfile = () => {
       <sc.InfoContainer>
         <sc.ContainerLabelWrapper>
           <sc.ContainerLabel>Resume and Links</sc.ContainerLabel>
-          <sc.EditButton>EDIT</sc.EditButton>
+          <sc.EditButton onClick={closeProInfoModal}>EDIT</sc.EditButton>
+          <EditProfessionalInfoModal
+            headerText="Edit Professional Information"
+            closeModal={closeProInfoModal}
+            isOpen={openProInfoModal}
+            testHook="editProDetails"
+            mode="dark"
+            portalDivId="editProDetails"
+          />
         </sc.ContainerLabelWrapper>
         <sc.DividerLine></sc.DividerLine>
         <sc.LabelContainer>
