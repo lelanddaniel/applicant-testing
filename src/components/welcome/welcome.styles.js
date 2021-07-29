@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { PrimaryButton } from "@carvana/showroom-forms";
 
+export const YoutubeWrapper = styled.div`
+  padding-top: 28px;
+  display: flex;
+
+`;
 
 export const HelpGetToKnow = styled.div`
   height: 136px;
@@ -19,13 +24,13 @@ export const HelpGetToKnowButton = styled(PrimaryButton)`
   min-height: 40px;
 `;
 
-export const PositionsSection = styled.div`
+export const Sections = styled.div`
   padding-top: 60px;
 `;
 
 export const Wrapper = styled.div`
   width: 956px;
-  padding-top: 40px;
+  padding: 40px 0px;
   background: #FFFFFF;
   margin-left: auto;
   margin-right: auto;

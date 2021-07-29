@@ -4,3 +4,4 @@ export { default as EditProfessionalInfoModal } from './edit-professional-info-m
 export { default as Navigation } from './navigation';
 export { default as PositionsList } from './positions-list';
 export { default as ChallengeList } from './challenges-list';
+export { default as EmbedYoutube } from './embed-youtube';

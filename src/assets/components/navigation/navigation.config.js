@@ -2,7 +2,7 @@ const NavigationConfig = [
   {
     id: 1,
     title: 'Home',
-    path: '/positions'
+    path: '/welcome'
   },{
     id: 2,
     title: 'Applications',

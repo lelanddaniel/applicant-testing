@@ -9,7 +9,7 @@ const getConfigForRoute = (pathname, username) => {
   };
 
   switch(pathname) {
-    case '/positions':
+    case '/welcome':
       config.image = StuckHomeWorkingfromHome;
       config.text = `Welcome ${username}!`;
       break;

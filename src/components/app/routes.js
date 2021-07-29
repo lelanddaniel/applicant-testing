@@ -72,7 +72,7 @@ const Routes = props => {
           <Route path="/signin">
             <SignIn />
           </Route>
-          <Route path="/challenge">
+          <Route path="/challenge/:id">
             <Wrapper>
               <Challenge />
             </Wrapper>

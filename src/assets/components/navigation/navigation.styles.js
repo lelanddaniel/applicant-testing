@@ -16,6 +16,7 @@ export const navigationTile = styled.div`
   &:first-child {
     margin-left: 0px;
   }
+  
   cursor: pointer;
 `;
 
