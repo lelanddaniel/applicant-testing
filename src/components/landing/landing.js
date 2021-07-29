@@ -16,7 +16,7 @@ const Landing = () => {
         <Input label="Email" width={400} mode="dark"/>
       </sc.EmailTextContainer>
       <sc.ButtonContainer>
-        <sc.StyledButton>
+        <sc.StyledButton onClick={() => document.location.href = '/registration'}>
           Sign up
         </sc.StyledButton>
       </sc.ButtonContainer>

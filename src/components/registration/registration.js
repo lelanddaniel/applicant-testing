@@ -27,7 +27,7 @@ const Registration = () => {
         <Input id="password" label="Password" />
         </sc.PasswordInputContainer>
         <sc.ButtonContainer>
-          <sc.StyledButton>
+          <sc.StyledButton onClick={() => document.location.href = '/welcome'}>
             Register
           </sc.StyledButton>
       </sc.ButtonContainer>

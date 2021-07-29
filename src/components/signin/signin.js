@@ -3,6 +3,7 @@ import Input from "@carvana/showroom-forms/Input";
 import StuckAtHome from '../../assets/images/StuckAtHome.png';
 import * as sc from "./signin.styles";
 
+
 const SignIn = () => {
   return (
     <sc.ContentWrapper>
@@ -18,7 +19,7 @@ const SignIn = () => {
           <Input id="password" label="Password" />
         </sc.PasswordInputContainer>
         <sc.ButtonContainer>
-          <sc.StyledButton>Sign In</sc.StyledButton>
+          <sc.StyledButton onClick={()=> document.location.href = '/welcome'}>Sign In</sc.StyledButton>
           <sc.ImageWrapper src={StuckAtHome} alt='StuckAtHome' height='550px' width='450px'/>
         </sc.ButtonContainer>
         <sc.AccountDoesntExistsTextContainer>
