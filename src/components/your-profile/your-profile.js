@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import SecondaryButton from "@carvana/showroom-forms/Button/Secondary";
-import PrimaryButton from "@carvana/showroom-forms/Button/Primary";
+import { PrimaryButton } from "@carvana/showroom-forms";
 import EditPersonalDetailsModal from "../../assets/components/edit-personal-details-modal/edit-modal";
 import * as sc from "./your-profile.styles";
 import EditProfessionalInfoModal from "../../assets/components/edit-professional-info-modal/edit-modal";
@@ -72,7 +71,7 @@ const YourProfile = () => {
           </sc.Text>
         </sc.TextContainer>
         <sc.ButtonContainer>
-          <SecondaryButton>Upload</SecondaryButton>
+          <sc.SmallSecondaryStyledButton>Upload</sc.SmallSecondaryStyledButton>
         </sc.ButtonContainer>
         <sc.LabelContainer>
           <sc.Label>LinkedIn Profile</sc.Label>
@@ -92,6 +91,10 @@ const YourProfile = () => {
         <sc.TextContainer>
           <sc.Text>https://github.com/ericstone77</sc.Text>
         </sc.TextContainer>
+        <sc.ButtonContainer>
+          <sc.SmallSecondaryStyledButton onClick={() => document.location.href = '/welcome'}>Cancel</sc.SmallSecondaryStyledButton>
+          <sc.SmallPrimaryStyledButton onClick={() => document.location.href = '/welcome?profileComplete=true'}>Save</sc.SmallPrimaryStyledButton>
+        </sc.ButtonContainer>
       </sc.InfoContainer>
 
       <sc.InfoContainer>
