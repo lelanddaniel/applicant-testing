@@ -47,7 +47,7 @@ const Routes = props => {
         <Switch>
           <Route path="/welcome">
             <Wrapper>
-              <Welcome />
+              <Welcome {...props}/>
             </Wrapper>
           </Route>
           <Route path="/your-profile">

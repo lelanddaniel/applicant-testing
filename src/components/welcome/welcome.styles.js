@@ -30,7 +30,8 @@ export const Sections = styled.div`
 
 export const Wrapper = styled.div`
   width: 956px;
-  padding: 40px 0px;
+  padding-top: ${props => props.padding}px;
+  padding-bottom: 40px;
   background: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
