@@ -5,7 +5,7 @@ export const navigationTile = styled.div`
   display: flex;
   align-items: center;
   width: auto;
-  padding-left: 40px;
+  margin-left: 40px;
   font-size: 16px;
   line-height: 20px;
   font-feature-settings: 'liga' off;
@@ -16,6 +16,7 @@ export const navigationTile = styled.div`
   &:first-child {
     padding-left: 0px;
   }
+  cursor: pointer;
 `;
 
 export const Wrapper = styled.div`

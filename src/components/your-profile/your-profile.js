@@ -6,7 +6,6 @@ import * as sc from "./your-profile.styles";
 const YourProfile = () => {
   return (
     <sc.ContentWrapper>
-      <sc.PageHeader></sc.PageHeader>
       <sc.InfoContainer>
         <sc.ContainerLabelWrapper>
           <sc.ContainerLabel>Personal Information</sc.ContainerLabel>

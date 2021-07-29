@@ -9,11 +9,7 @@ export const ContentWrapper = styled.div`
   gap: 15px;
   height: 100%;
   padding-bottom: 25px;
-`;
-
-export const PageHeader = styled.div`
-  width: 100%;
-  height: 152px;
+  padding-top: 80px;
 `;
 
 export const InfoContainer = styled.div`

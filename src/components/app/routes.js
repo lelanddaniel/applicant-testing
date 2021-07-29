@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import styled from "styled-components";
-import Navigation from "../navigation";
+import { Banner, Navigation } from '../../assets/components';
 import WelcomeScreen from '../welcome';
 import ListOfPositions from "../list-of-positions";
 import Registration from '../registration';
@@ -30,7 +30,7 @@ const RoutesWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background: #eef2f3;
+  background: #FFFFFF;
   width: 100%;
 `;
 
@@ -41,19 +41,25 @@ const Routes = props => {
     <Router>
       <Navigation pathname={pathname}/>
       <RoutesWrapper>
+      <Banner pathname={pathname}/>
         <Switch>
           <Route path="/positions">
             <Wrapper>
               <ListOfPositions />
             </Wrapper>
           </Route>
-          <Route path="/registration">
-            <Registration />
-          </Route>
-          <Route path="/yourprofile">
+          <Route path="/your-profile">
             <Wrapper>
               <YourProfile />
             </Wrapper>
+          </Route>
+          <Route path="/applications">
+            <Wrapper>
+              <YourProfile />
+            </Wrapper>
+          </Route>
+          <Route path="/registration">
+            <Registration />
           </Route>
           <Route path="/signin">
             <SignIn />
