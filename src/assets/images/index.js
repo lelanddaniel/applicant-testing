@@ -4,6 +4,7 @@ import StuckAtHome from './StuckAtHome.png';
 import StuckHomeMonitor from './StuckHomeMonitor.svg';
 import StuckHomeToDoList from './StuckHomeToDoList.svg';
 import StuckHomeWorkingfromHome from './StuckHomeWorkingfromHome.svg';
+import MainLogo from './MainLogo.svg';
 
 export {
     HappyPlace,
@@ -11,5 +12,6 @@ export {
     StuckAtHome,
     StuckHomeMonitor,
     StuckHomeToDoList,
-    StuckHomeWorkingfromHome
+    StuckHomeWorkingfromHome,
+    MainLogo
 };

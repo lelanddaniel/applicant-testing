@@ -46,5 +46,5 @@ export const ButtonContainer = styled.div`
 `;
 
 export const StyledButton = styled(PrimaryButton)`
-  width: 50px;
+  width: 250px;
 `;

@@ -7,6 +7,10 @@ const NavigationConfig = [
     id: 2,
     title: 'Applications',
     path: '/applications'
+  },{
+    id: 3,
+    title: 'Coding Challenges',
+    path: '/tests'
   }
 ]
 

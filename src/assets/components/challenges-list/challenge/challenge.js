@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import * as sc from "./challenge.styles";
 import { Option } from "@carvana/showroom-forms/Select";
 
-const Challenge = ({ rank, description, showDivider, id }) => {
+const Challenge = ({ rank, description, showDivider }) => {
   const history = useHistory();
   const [languageValue, setLanguageValue] = useState("");
   const [challengeValue, setChallengeValue] = useState("");
@@ -17,7 +17,7 @@ const Challenge = ({ rank, description, showDivider, id }) => {
   };
 
   const routeChange = () => {
-    let path = './challenge';
+    let path = './challenge/:id';
     history.push(path);
   }
 
@@ -135,7 +135,7 @@ const Challenge = ({ rank, description, showDivider, id }) => {
             <sc.StyledButton
               onClick={() => routeChange()}
               >
-                Begin Test
+                Start Challenge
             </sc.StyledButton>
           </sc.ButtonContainer>
         </div>

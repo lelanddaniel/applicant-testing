@@ -34,7 +34,7 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   padding-left: 60px;
   background: white;
-  border-bottom: 1px solid ${props => props.theme.color.neutral.v300};
+  border-bottom: 4px solid ${props => props.theme.color.secondary.v200};
 `;
 
 export const ImageWrapper = styled.img`
