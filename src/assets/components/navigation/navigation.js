@@ -2,7 +2,7 @@ import React from 'react';
 import * as sc from './navigation.styles';
 import NavigationConfig from './navigation.config';
 
-const routesToShowNavigation = ['/welcome', '/your-profile', '/applications'];
+const routesToShowNavigation = ['/welcome', '/your-profile', '/applications', '/tests'];
 
 const Navigation = ({pathname}) => {
 
